@@ -8,9 +8,10 @@ service 'apache2' do
 end
 
 file '/var/www/html/index.html' do
-  content '<html>
+  content "<html>
   <body>
-    <h1>hello world</h1>
+    <h1>hello world the ip address  is #{node['ipaddress']}
+</h1>
   </body>
-</html>'
+</html>"
 end 
